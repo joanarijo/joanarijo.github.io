@@ -1,0 +1,45 @@
+nav {
+    transform: translateY(80px);
+    margin-top: -80px;
+    padding: 0 10%;
+}
+
+.nav__items{
+    background-color: transparent;
+    border: none;
+    height: 40px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav__links{
+    margin-left: auto;
+}
+
+.nav__item--left{
+    margin-right: auto;
+}
+
+.nav__item--logo{
+    height: 40px;
+}
+
+.nav__item--link{
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #8685A1;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.nav__item--link:houver{
+    color: #FFC817;
+}
+
+.active{
+    color: #FFC817;
+}
