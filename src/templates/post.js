@@ -5,9 +5,27 @@ import Nav from '../components/nav';
 import SEO from '../components/seo';
 import './post.css';
 
+export default (props) => {
+    return (
+        <Layout>
+            <SEO title={props.data.contentfulProject.seoTitle} description={props.data.contentfulProject.seoDescription} keywords={props.data.contentfulProject.seoKeywords} />
+            <Nav />
+            <div className="project__hero" style={{backgroundImage: `url(${props.data.contentfulProject.featuredImage.fluid.src})`}}></div>
+            <div className="project__content">
+                <h1 className="project__title">{props.data.contentfulProject.title}</h1>
+                <div className="project__description">
+                <div dangerouslySetInnerHTML={
+                        {__html: `${props.data.contentfulProject.content.childMarkdownRemark.html}`}
+                    } />
+                </div>
+                <p className="project__categories"></p>
+            </div>
+        </Layout>
+    )
+}
 
-export const postQuery = graphql`
-    query($id: String!) {
+export const query = graphql`
+    query ProjectTemplate($id: String!) {
         contentfulProject(id: {eq: $id}){
             title
             id
@@ -35,23 +53,3 @@ export const postQuery = graphql`
         }
     }
     `
-
-
-export default (props) => {
-    return (
-        <Layout>
-            <SEO title={props.data.contentfulProject.seoTitle} description={props.data.contentfulProject.seoDescription} keywords={props.data.contentfulProject.seoKeywords} />
-            <Nav />
-            <div className="project__hero" style={{backgroundImage: `url(${props.data.contentfulProject.featuredImage.fluid.src})`}}></div>
-            <div className="project__content">
-                <h1 className="project__title">{props.data.contentfulProject.title}</h1>
-                <div className="project__description">
-                <div dangerouslySetInnerHTML={
-                        {__html: `${props.data.contentfulProject.content.childMarkdownRemark.html}`}
-                    } />
-                </div>
-                <p className="project__categories"></p>
-            </div>
-        </Layout>
-    )
-}
