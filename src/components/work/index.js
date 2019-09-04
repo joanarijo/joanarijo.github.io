@@ -17,6 +17,10 @@ export default () => (
                         id
                         slug
                         title
+                        category {
+                            title
+                            id
+                        }
                         featuredImage {
                             fluid(maxWidth: 1200, quality: 85){
                                 src
@@ -33,10 +37,16 @@ export default () => (
        `}
        
        render={data => (
+           
         <div className='project' id='project'>
                {data.allContentfulProject.edges.map(edge => (
                    <div className='project__content' onClick={() => navigate(`/project/${edge.node.slug}`)}>
-                       <div className='project__image' style={{backgroundImage: `url(${edge.node.featuredImage.fluid.src})`}}><span className='project--name'>{edge.node.title}</span></div>
+                       <div className='project__image' style={{backgroundImage: `url(${edge.node.featuredImage.fluid.src})`}}>
+                           <p className='project__name'>{edge.node.title}</p>
+                           {edge.node.category.map(category => (
+                               <p className='project__category'>#{category.title}</p>
+                           ))}
+                       </div>
                    </div>
 
                ))}
