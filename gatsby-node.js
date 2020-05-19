@@ -43,8 +43,84 @@ exports.createPages = ({actions, graphql}) => {
             })
         })
     });
+    const getExperiment = makeRequest(graphql, `
+    {
+        allContentfulExperiments(
+            sort: { fields: [createdAt], order: DESC }
+            filter: {
+                node_locale: {eq: "en-US"}},)
+        {
+            edges {
+                node {
+                    id
+                    
+                }
+            }
+        }
+    }
+    `);
+
+    const getAbout = makeRequest(graphql, `
+    {
+        allContentfulWork(
+            sort: { fields: [createdAt], order: DESC }
+            filter: {
+                node_locale: {eq: "en-US"}},)
+        {
+            edges {
+                node {
+                    id
+                    
+                }
+            }
+        },
+
+        allContentfulEducation(
+            sort: { fields: [createdAt], order: DESC }
+            filter: {
+                node_locale: {eq: "en-US"}},)
+        {
+            edges {
+                node {
+                    id
+                    
+                }
+            }
+        },
+        allContentfulLanguage(
+            sort: { fields: [createdAt], order: DESC }
+            filter: {
+                node_locale: {eq: "en-US"}},)
+        {
+            edges {
+                node {
+                    id
+                    
+                }
+            }
+        },
+        allContentfulTools(
+            sort: { fields: [createdAt], order: DESC }
+            filter: {
+                node_locale: {eq: "en-US"}},)
+        {
+            edges {
+                node {
+                    id
+                    
+                }
+            }
+        }
+    }
+    `);
+
+ 
+
 
     return Promise.all([
-        getProject
+        getProject,
+        getExperiment,
+        getAbout
+
     ])
 };

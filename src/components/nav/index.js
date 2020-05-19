@@ -1,19 +1,35 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { window } from 'browser-monads';
-import logo from '../../images/gatsby-icon.png';
+import logo from '../../images/logo.png';
 import './nav.css';
 
 const Nav = () => (
-    <nav>
-        <div className='nav__items'>
-            <a className='nav__item--left' href='/'><img src={logo} alt='Joana Rijo Portfolio' className='nav__item--logo'/>logo goes here</a>
-           
-            <Link className={window.location.href.indexOf('work') > 0 ? 'nav__item--link active' : 'nav__item--link'} to='/#project'>Work</Link>
 
-            <Link className={window.location.href.indexOf('about') > 0 ? 'nav__item--link active' : 'nav__item--link'} to='/#contact'>About</Link>
-        </div>
-    </nav>
+    <header className='navbar'>
+        <nav className='navbar__nav'>
+
+            <div className='navbar__logo'>
+                <a href='/'><img src={logo} alt='Joana Rijo Portfolio' /></a>
+            </div>
+            <input id="toggle" type="checkbox"/>
+
+<label htmlFor='toggle' className='hamburger'>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+</label>
+
+<label htmlFor='toggle' className='overlay'></label>
+
+<nav className='nav'>
+  <Link to='/'><span>Home</span></Link>
+  <Link to='/#projects'><span>Projects</span></Link>
+  <Link to='/#experiments'><span>Experiments</span></Link>
+  <Link to='/about'><span>About</span></Link>
+</nav>
+        </nav>
+    </header>
 )
 
 export default Nav

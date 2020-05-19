@@ -1,15 +1,19 @@
 .hero{
-    background-color: var(--darkblue);
-    height: 100vh;
-    padding: 0 10%;
-    display: flex;
-    align-items: center; 
+  height: 100vh;
+  padding: 0 10%;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  flex-flow: column;
+  background-color: var(--lessdarkgrey);
 }
 
 .hero__quote{
-    color: var(--lightblue);
+    color: var(--white);
     margin: 0 auto; 
     display: block;
+    text-align: center;
+    font-family: 'MarineItalic', Arial, Helvetica, sans-serif;
 }
 
 .hero__quote h1{
@@ -18,8 +22,8 @@
     font-size: 3.5rem;
 }
 
-.hero--white{
-    color: var(--white);
+.hero--yellow{
+    color: var(--yellow);
 }
 
 

@@ -1,22 +1,23 @@
 import React from 'react';
 import './hero.css';
-import ReactTypingEffect from 'react-typing-effect';
-
 
 
 
 const Hero = () => (
-    
+
     <div className='hero'>
         <div className='hero__quote'>
-            <h1>Hello :)</h1>
-            <h1>I’m Joana, a <ReactTypingEffect text={[`web developer`, `multimedia designer`]} speed='200' eraseDelay='1000' className='hero--white'/></h1> 
-            <h1>living in Lisbon, currently working for Caseking Portugal.</h1>
+            <h1>Hello! I’m Joana,</h1>
+            
+            <h1>a <span className='hero--yellow'>designer</span> and <span className='hero--yellow'>developer</span></h1>
+            <h1>living in Lisbon.</h1>
         </div>
+        <div className='hero--yellow'>arrow</div>
     </div> 
 
 
 )
 
 export default Hero
+
 

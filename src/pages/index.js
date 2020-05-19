@@ -1,19 +1,24 @@
 import React from "react"
 import Nav from '../components/nav';
 import Hero from '../components/hero';
-import Work from '../components/work';
+import Projects from '../components/projects';
+import Experiments from '../components/experiments';
 import Footer from '../components/footer';
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+
 const IndexPage = () => (
+
   <Layout>
     <SEO title="Home" keywords={[`portfolio`, `developer`, `front-end`]}/>
     <Nav />
     <Hero />
-    <Work />
+    <Projects />
+    <Experiments />
     <Footer />
   </Layout>
+
 )
 
 export default IndexPage

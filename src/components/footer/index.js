@@ -4,11 +4,8 @@ import './footer.css';
 
 const thisYear = new Date().getFullYear();
 const Footer = () => (
-    
 
-
-    
-    <div>Copyright {thisYear}</div>
+    <div className="footer">Made with <span className="footer--yellow">&#10084;</span> by Joana Rijo • Copyright {thisYear}</div>
 )
 
 export default Footer

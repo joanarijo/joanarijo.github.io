@@ -1,11 +1,12 @@
-import React from "react"
-import { graphql } from "gatsby"
+import React from "react";
+import { graphql } from "gatsby";
 import Layout from '../components/layout';
 import Nav from '../components/nav';
 import SEO from '../components/seo';
 import './post.css';
+import Footer from "../components/footer";
 
-export default (props) => {
+const ProjectTemplate = (props) => {
     return (
         <Layout>
             <SEO title={props.data.contentfulProject.seoTitle} description={props.data.contentfulProject.seoDescription} keywords={props.data.contentfulProject.seoKeywords} />
@@ -18,14 +19,19 @@ export default (props) => {
                         {__html: `${props.data.contentfulProject.content.childMarkdownRemark.html}`}
                     } />
                 </div>
-                <p className="project__categories"></p>
+                {props.data.contentfulProject.category.map(category => (
+                    <p className="project__categories">{category.title}</p>
+                    ))}
             </div>
+            <Footer />
         </Layout>
     )
 }
 
+export default ProjectTemplate;
+
 export const query = graphql`
-    query ProjectTemplate($id: String!) {
+    query ($id: String!) {
         contentfulProject(id: {eq: $id}){
             title
             id
@@ -35,19 +41,23 @@ export const query = graphql`
                     html
                 }
             }
+            category {
+                title
+                id
+            }
             seoTitle
             seoDescription
             seoKeywords
             seoImage {
                 fluid(maxWidth: 1200, quality: 100) {
-                    ...GatsbyContentfulFluid
                     src
+                    ...GatsbyContentfulFluid
                 }
             }
             featuredImage {
                 fluid(maxWidth: 1200, quality: 100) {
-                    ...GatsbyContentfulFluid
                     src
+                    ...GatsbyContentfulFluid
                 }
             }
         }

@@ -1,0 +1,78 @@
+.experiment{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.experiment h1{
+    font-family: 'MarineItalic', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 3.5rem;
+    color: var(--white);
+}
+
+.experiment__wrap {
+
+    display: grid;
+    margin: 5% 0 0 0;
+    padding: 0 10%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    min-height: 500px;
+    width: 100%;
+
+    /* display: grid;
+    margin: 5% 10% 0 10%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    height: 500px; */
+}
+
+figure{
+    margin: 0;
+    position: relative;
+}
+
+.experiment__content--hover{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background : var(--yellow);
+    color: var(--darkgrey);
+    opacity: 0;
+    transition: 0.5s ease all;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    
+}
+
+.experiment__content--hover:hover{
+    visibility: visible;
+    opacity: 1;
+    z-index: 3;
+  }
+
+/*
+.experiment__content .experiment__image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.experiment__content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+ */
+
