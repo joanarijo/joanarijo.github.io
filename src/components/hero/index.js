@@ -1,6 +1,6 @@
 import React from 'react';
 import './hero.css';
-
+import scrollTo from 'gatsby-plugin-smoothscroll';
 
 
 const Hero = () => (
@@ -12,7 +12,7 @@ const Hero = () => (
             <h1>a <span className='hero--yellow'>designer</span> and <span className='hero--yellow'>developer</span></h1>
             <h1>living in Lisbon.</h1>
         </div>
-        <div className='hero--yellow'>arrow</div>
+        <button onClick={() => scrollTo('#projects')} className='arrow'></button>
     </div> 
 
 

@@ -1,13 +1,11 @@
 import React from "react"
 import {graphql, StaticQuery} from 'gatsby'
-import Nav from '../components/nav';
 import Footer from '../components/footer';
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "../components/about.css"
 import ReactTypingEffect from 'react-typing-effect';
 import avatar from '../images/avatar.jpg';
-import resume from '../images/resume.pdf';
 
 export default () => (
     
@@ -86,7 +84,7 @@ export default () => (
       render={data => (
     <Layout>
     <SEO title="About" />
-    <Nav />    
+     
        <div className='about' id='about'>
               
 
@@ -103,7 +101,6 @@ export default () => (
                           </div>
 
                           <div className='about__profiles'>
-                            <a href={resume} target="_blank" rel="noopener noreferrer" className='about__link'><span>Resume</span></a> • 
                             <a href="https://www.linkedin.com/in/joana-rijo-459a9542/" target="_blank" rel="noopener noreferrer" className='about__link'><span>LinkedIn</span></a> • 
                             <a href="https://github.com/joanarijo" target="_blank" rel="noopener noreferrer" className='about__link'><span>Github</span></a> • 
                             <a href="https://codepen.io/joanarijo" target="_blank" rel="noopener noreferrer" className='about__link'><span>Codepen</span></a>
@@ -111,7 +108,7 @@ export default () => (
                         </div>
                       </div>
                       <div className='about__moreinfo'>
-
+                        
                          <div className='about__experience'>
                            <h3>Experience</h3>
                            <div className='experience__wrap'>

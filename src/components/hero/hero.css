@@ -35,7 +35,7 @@
     width: 3px;
 
   }
-
+/*
   .typed-text {
     font-weight: normal;
     color: #dd7732;
@@ -56,5 +56,20 @@
     50% { background-color: transparent; }
     99% { background-color: transparent; }
     100%  { background-color: #ccc; }
-  }
+  }*/
 
+.arrow {
+  margin-top: 5%;
+  background-color: transparent;
+  border: 0;
+  border-left: var(--yellow) 2px solid;
+  border-top: var(--yellow) 2px solid;
+  width: 15px;
+  height: 15px;
+  transform:matrix(2.12,-0.74,-2.12,-0.74,0,0);
+  -ms-transform:matrix(2.12,-0.74,-2.12,-0.74,0,0);
+  -webkit-transform:matrix(2.12,-0.74,-2.12,-0.74,0,0);
+  cursor: pointer;
+}
+
+button:focus {outline:0;}

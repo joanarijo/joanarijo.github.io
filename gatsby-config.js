@@ -12,6 +12,9 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-remark`,
+    `gatsby-plugin-transition-link`,
+    `gatsby-plugin-smoothscroll`,
+    `gatsby-plugin-anchor-links`,
     {
       resolve: `gatsby-source-contentful`,
       options: {

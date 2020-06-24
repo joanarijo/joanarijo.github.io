@@ -4,6 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import "./layout.css"
 
+
 const Layout = ({ children }) => {
    useStaticQuery(graphql`
     query SiteTitleQuery {

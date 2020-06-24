@@ -1,6 +1,7 @@
 import React from 'react'
-import {graphql, StaticQuery, Link} from 'gatsby'
+import {graphql, StaticQuery} from 'gatsby'
 import './projects.css'
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 
 export default () => (
@@ -49,7 +50,7 @@ export default () => (
                             <div>
                                 <h1 className='project__name'>{edge.node.title}</h1>
                                 <p className='project__subtitle'>{edge.node.subTitle}</p>
-                                <Link className='project__link' to={`/project/${edge.node.slug}`}><span>View More</span></Link>
+                                <AniLink  className='project__link' cover to={`/project/${edge.node.slug}`} direction="left" bg="#fcbc19"><span>View More</span></AniLink>
                             </div>
                         <div>
                                 <img className='project__image' src={edge.node.featuredImage.fluid.src} alt=''/>
