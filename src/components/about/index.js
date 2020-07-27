@@ -1,11 +1,8 @@
 import React from "react"
 import {graphql, StaticQuery} from 'gatsby'
-import Footer from '../components/footer';
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import "../components/about.css"
+import "./about.css"
 import ReactTypingEffect from 'react-typing-effect';
-import avatar from '../images/avatar.jpg';
+import avatar from '../../images/avatar.jpg';
 
 export default () => (
     
@@ -82,8 +79,8 @@ export default () => (
       
       
       render={data => (
-    <Layout>
-    <SEO title="About" />
+    
+
      
        <div className='about' id='about'>
               
@@ -170,8 +167,7 @@ export default () => (
             
           </div>
           
-    <Footer />
-  </Layout>
+
       )}
       />
 )

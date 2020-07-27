@@ -16,7 +16,9 @@ export default () => (
                         node {
                             id
                             title
-                            link
+                            subTitle
+                            demoLink
+                            githubLink
                             featuredImage {
                                 fluid(maxWidth: 1200, quality: 85) {
                                     ...GatsbyContentfulFluid
@@ -47,8 +49,15 @@ export default () => (
                     fluid={edge.node.featuredImage.fluid} 
                     className='experiment__image' />
                 <figcaption className='experiment__content--hover'>
-                    <h2 className='experiment__name'>{edge.node.title}</h2>
-                    <a className='experiment__link' href={edge.node.link}><span>View More</span></a>
+                    <div className='experiment__contentwrap'>
+                        <h2 className='experiment__title'>{edge.node.title}</h2>
+                        <h3 className='experiment__subtitle'>{edge.node.subTitle}</h3>
+                        <ul>
+                            <li><a className='experiment__link' href={edge.node.githubLink} target="_blank" rel="noopener noreferrer" >Code</a></li>
+                            <li>•</li>
+                            <li><a className='experiment__link' href={edge.node.demoLink} target="_blank" rel="noopener noreferrer" >Demo</a></li>
+                        </ul>
+                    </div>
                 </figcaption>
                 </figure>
                 </article>

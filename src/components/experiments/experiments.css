@@ -9,14 +9,14 @@
 }
 
 .experiment h1{
-    font-family: 'MarineItalic', Arial, Helvetica, sans-serif;
+    font-family: var(--bolditalic), Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-size: 3.5rem;
     color: var(--white);
 }
 
 .experiment__wrap {
-
+    text-align: center;
     display: grid;
     margin: 5% 0 0 0;
     padding: 0 10%;
@@ -24,12 +24,6 @@
     grid-gap: 30px;
     min-height: 500px;
     width: 100%;
-
-    /* display: grid;
-    margin: 5% 10% 0 10%;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 30px;
-    height: 500px; */
 }
 
 figure{
@@ -43,37 +37,63 @@ figure{
     left: 0;
     width: 100%;
     height: 100%;
+    padding: 20px;
     background : var(--yellow);
     color: var(--darkgrey);
     opacity: 0;
     transition: 0.5s ease all;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: column;
     
 }
 
 .experiment__content--hover:hover{
     visibility: visible;
-    opacity: 1;
+    opacity: 0.9;
     z-index: 3;
   }
 
-/*
-.experiment__content .experiment__image img{
+
+.experiment__contentwrap {
+    border: 2px solid black;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
 }
 
-.experiment__content {
-    position: relative;
-    width: 100%;
-    height: 100%;
+.experiment__title {
+    font-family: var(--bolditalic), Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: var(--black);
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
+.experiment__subtitle  {
+    font-family: var(--lightitalic), Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    font-size: 1rem;
+    color: var(--black);
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-bottom: 30px;
+}
 
+.experiment__contentwrap ul {
+    padding: 0;
+}
 
- */
+.experiment__contentwrap ul li {
+    display: inline;
+    padding: 5px;
+}
 
+.experiment__contentwrap ul li a {
+    text-decoration: none;
+    font-family: var(--bolditalic), Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--black);
+}
