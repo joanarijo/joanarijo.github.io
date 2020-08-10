@@ -82,4 +82,19 @@ main{
   min-height: 100vh;
 }
 
+/* custom scroll */ 
+::-webkit-scrollbar {
+  width: 5px;
+}
 
+::-webkit-scrollbar-track {
+  background: #0f1419; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: var(--yellow); 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
