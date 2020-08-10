@@ -18,10 +18,8 @@
 
 .contact__wrap {
     text-align: center;
-    margin: 5% 0 0 0;
     padding: 0 10%;
     width: 60%;
-
 }
 
 .contact__form {
@@ -50,7 +48,6 @@
     outline-color: var(--yellow);
 }
 
-
 .contact__form textarea{
     border-radius: 5px;
     border: 0;
@@ -67,4 +64,8 @@
     border-radius: 5px;
     font-family: var(--bolditalic), Arial, Helvetica, sans-serif;
     margin: 20px;
+}
+
+.field__hidden{
+    display: none;
 }

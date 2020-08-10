@@ -27,6 +27,7 @@ const Nav = () => (
   <Link to='/#projects'><span>Projects</span></Link>
   <Link to='/#experiments'><span>Experiments</span></Link>
   <Link to='/#about'><span>About</span></Link>
+  <Link to='/#contact'><span>Contact</span></Link>
 </nav>
         </nav>
     </header>

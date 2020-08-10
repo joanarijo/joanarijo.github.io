@@ -110,7 +110,7 @@ export default () => (
                            <h3>Experience</h3>
                            <div className='experience__wrap'>
                               {data.allContentfulWork.edges.map((edge) => (
-                                <div>
+                                <div key={edge.node.id}>
                                     <p className='experience__role about--yellow'>{edge.node.role}</p>
                                     <p className='experience__company'>{edge.node.company}</p>
                                     <p className='experience__timeline'>{edge.node.timeline}</p>
@@ -123,7 +123,7 @@ export default () => (
                            <h3>Education</h3>
                            <div className='education__wrap'>
                               {data.allContentfulEducation.edges.map((edge) => (
-                                <div>
+                                <div key={edge.node.id}>
                                     <p className='education__course about--yellow'>{edge.node.course}</p>
                                     <p className='education__school'>{edge.node.school}</p>
                                     <p className='education__timeline'>{edge.node.timeline}</p>
@@ -137,7 +137,7 @@ export default () => (
                            <div className='languages__wrap'>
                            <div className='languages__wrap--grid'>
                               {data.allContentfulLanguage.edges.map((edge) => (
-                                <div>
+                                <div key={edge.node.id}>
                                     <div dangerouslySetInnerHTML={{ __html: edge.node.list.childMarkdownRemark.html, }} />
                                 </div>
                                   ))}
@@ -150,7 +150,7 @@ export default () => (
                            <div className='tools__wrap'>
                            <div className='tools__wrap--grid'>
                               {data.allContentfulTools.edges.map((edge) => (
-                                <div>
+                                <div key={edge.node.id}>
                                     <div dangerouslySetInnerHTML={{ __html: edge.node.list.childMarkdownRemark.html, }} />
                                 </div>
                                   ))}
