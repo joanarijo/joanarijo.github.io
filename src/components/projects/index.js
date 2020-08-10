@@ -22,7 +22,6 @@ export default () => (
                             slug
                             title
                             subTitle
-                            projectNumber
                             featuredImage {
                                 fluid(maxWidth: 1200, quality: 100){
                                     src
@@ -57,11 +56,6 @@ export default () => (
                         </div>
                     </div>
                     </div>
-                    <div className='project__pagination'>
-                        <div><p className='project__number'>Featured Project • {edge.node.projectNumber} / 4</p></div>
-                        <div className="project__arrow"></div>
-                        
-                   </div>
                    </div>
                ))}
            </div>

@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: center;
     flex-flow: column;
-    
+    background-color: var(--lessdarkgrey);
 }
 
 .experiment h1{
