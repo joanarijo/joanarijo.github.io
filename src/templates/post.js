@@ -6,8 +6,11 @@ import SEO from '../components/seo';
 import './post.css';
 import Footer from "../components/footer";
 
+
+
 const ProjectTemplate = (props) => {
     return (
+        <div className='teste'>
         <Layout>
             <SEO title={props.data.contentfulProject.seoTitle} description={props.data.contentfulProject.seoDescription} keywords={props.data.contentfulProject.seoKeywords} />
             <Nav />
@@ -42,6 +45,7 @@ const ProjectTemplate = (props) => {
 
             <Footer />
         </Layout>
+        </div>
     )
 }
 

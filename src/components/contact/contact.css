@@ -55,6 +55,8 @@
     height: 210px;
     padding: 20px;
     font-family: var(--regular), Arial, Helvetica, sans-serif;
+    resize: none;
+
 }
 .contact__form  button {
     padding: 17px 60px;
