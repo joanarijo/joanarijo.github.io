@@ -3,9 +3,8 @@
 .post__wrap{
     position: relative;
     padding: 7% 10% 0 10%;
-    
+    height: 95vh;
 }
-
 
 .post__hero{
     width: 100%;

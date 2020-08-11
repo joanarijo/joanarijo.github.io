@@ -62,10 +62,10 @@ body {
   color: var(--white);
  
 }
-
+/*
 html {
   scroll-behavior: smooth;
-}
+}*/
 
 img {
   max-width: 100%;
@@ -79,7 +79,9 @@ h1{
 
 main{
   position: relative;
-  min-height: 100vh;
+  max-height: 100vh;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
 }
 
 /* custom scroll */ 

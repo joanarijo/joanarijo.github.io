@@ -43,7 +43,7 @@ const ProjectTemplate = (props) => {
 
             </div>
 
-            <Footer />
+           
         </Layout>
         </div>
     )
