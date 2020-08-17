@@ -29,6 +29,7 @@
     "react-helmet": "^5.2.1",
     "react-spring": "^8.0.27",
     "react-three-fiber": "^4.2.20",
+    "react-tilt": "^0.1.4",
     "react-typing-effect": "^2.0.2",
     "sharp": "^0.25.4",
     "smooth-scroll": "^16.1.3",

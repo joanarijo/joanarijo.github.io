@@ -3,7 +3,7 @@ import { graphql } from "gatsby";
 import Layout from '../components/layout';
 import Nav from '../components/nav';
 import SEO from '../components/seo';
-import classes from './post.css';
+import './post.css';
 import Footer from "../components/footer";
 
 
@@ -14,9 +14,7 @@ const ProjectTemplate = (props) => {
 
     
         <Layout>
-            <style scoped>{classes.html}</style>
-
-
+            
             <SEO title={props.data.contentfulProject.seoTitle} description={props.data.contentfulProject.seoDescription} keywords={props.data.contentfulProject.seoKeywords} className='noanimation__scroll' />
             <Nav />
             <div className="post">

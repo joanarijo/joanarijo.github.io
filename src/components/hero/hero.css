@@ -8,6 +8,17 @@
   background-color: var(--lessdarkgrey);
 }
 
+#home{
+  position: absolute;
+  top:0;
+  left: 0;
+}
+
+
+.hero__quote, .hero button{
+  z-index: 2;
+}
+
 .hero__quote{
     color: var(--white);
     margin: 0 auto; 
@@ -53,6 +64,8 @@
 }
 
 button:focus {outline:0;}
+
+
 
 
 /* MOBILE */
