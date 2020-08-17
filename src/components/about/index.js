@@ -1,8 +1,9 @@
 import React from "react"
 import {graphql, StaticQuery} from 'gatsby'
 import "./about.css"
-import ReactTypingEffect from 'react-typing-effect';
 import avatar from '../../images/avatar.jpg';
+import Typewriter from 'typewriter-effect';
+
 
 export default () => (
     
@@ -90,7 +91,14 @@ export default () => (
                         <div className="about__photo"><img src={avatar} alt='Joana Rijo' /></div>
                         <div className='about__info'>
                           <h1 className='about__title'>Joana Rijo</h1>
-                          <h1 className='about__title about__title--yellow'><ReactTypingEffect text={[`Web Developer`, `JavaScript Developer`, `Multimedia Designer`]} speed='100' eraseDelay='200' className='hero--yellow'/></h1>  
+                          <h1 className='about__title about__title--yellow hero--yellow'>
+                            <Typewriter 
+                              options={{
+                                strings: ['Web Developer', 'JavaScript Developer', 'Multimedia Designer'],
+                                autoStart: true,
+                                loop: true,
+                              }}
+                            /></h1>  
                           <div className='about__copy'>
                             <p>A Senior Designer / Junior Developer based in Lisbon, Portugal.</p>
                             <p>I've been designing for more than 7 years. While working along with a few devs, I've developed a passion for learning new languages and building things, mostly with JavaScript. </p>
