@@ -71,3 +71,29 @@
 .field__hidden{
     display: none;
 }
+
+/* MOBILE */
+@media (max-width: 812px) {
+    .contact{
+        padding: 20% 0 20% 0;
+    }
+    
+    .contact__title {
+        font-size: 2.8rem;
+    }
+    
+    .contact__wrap {
+        padding: 10% 2rem;
+        width: 100%;
+    }
+
+    .input__wrap {
+        grid-template-columns: 1fr;
+        margin: 0 0 20px 0;
+    }
+    
+    .input__wrap input:first-child{
+        margin: 0 0 20px 0;
+    }
+
+}

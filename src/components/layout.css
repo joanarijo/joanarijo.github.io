@@ -62,10 +62,6 @@ body {
   color: var(--white);
  
 }
-/*
-html {
-  scroll-behavior: smooth;
-}*/
 
 img {
   max-width: 100%;
@@ -76,6 +72,11 @@ img {
 h1{
   margin: 0;
 }
+
+.animation__scroll{
+  scroll-behavior: smooth;
+}
+
 
 main{
   position: relative;
@@ -99,4 +100,13 @@ main{
 
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
+}
+
+
+/* MOBILE */
+@media (max-width: 812px) {
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
 }

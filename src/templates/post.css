@@ -1,9 +1,9 @@
 
-
 .post__wrap{
     position: relative;
     padding: 7% 10% 0 10%;
     height: 95vh;
+    
 }
 
 .post__hero{
@@ -57,4 +57,33 @@ pre{
 .content__description a, .content__description a:visited{
     text-decoration: none;
     color: var(--yellow);
+}
+
+
+/* MOBILE */
+@media (max-width: 812px) {
+    .post{
+        padding: 20% 0 0 0;
+    }
+
+    .post__wrap{
+        padding: 10% 2rem 0 2rem;
+        height: 90vh;
+    }
+
+    .post__info{
+        grid-template-columns: 1fr;
+    }
+
+    .post__categories {
+       border-right: 0;
+       padding-bottom: 30px;
+    }
+
+    .post__content {
+        padding-right: 0;
+        border-top: 2px solid var(--lessdarkgrey);
+        padding-top: 30px;
+    }
+
 }

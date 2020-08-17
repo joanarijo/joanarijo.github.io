@@ -180,3 +180,21 @@
     pointer-events: auto;
   }
   
+
+/* MOBILE */
+@media (max-width: 812px) {
+  .navbar__nav {
+    display: flex;
+    padding: 2rem 0 0 2rem;
+  }
+  .hamburger {
+    right: 2rem;
+  }
+
+  .nav {
+    width: 100%;
+    padding: 2rem;
+  }
+
+
+}

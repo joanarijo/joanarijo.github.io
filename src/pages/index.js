@@ -6,17 +6,20 @@ import About from '../components/about';
 import Contact from '../components/contact';
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-
+import Nav from '../components/nav';
+import Footer from '../components/footer';
 
 const IndexPage = () => (
 
   <Layout>
-    <SEO title="Home" keywords={[`portfolio`, `developer`, `front-end`]}/>
+    <SEO title="Home" className='animation__scroll' keywords={[`portfolio`, `developer`, `front-end`]}/>
+    <Nav />
     <Hero />
     <Projects />
     <Experiments />
     <About />
     <Contact />
+    <Footer />
   </Layout>
 
 )
