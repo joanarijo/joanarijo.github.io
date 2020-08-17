@@ -133,3 +133,11 @@ figure{
         font-size: 1.2rem;
     }
  }
+
+/* TABLET */
+ @media (min-width: 812px) and (max-width: 1366px) {
+    .experiment__title {
+        font-size: 1rem;
+        margin-top: 16px;
+    }
+}

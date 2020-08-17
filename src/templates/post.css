@@ -87,3 +87,10 @@ pre{
     }
 
 }
+
+/* TABLET */
+@media (min-width: 812px) and (max-width: 1366px) {
+    .post__wrap {
+        padding: 10% 10% 0 10%;
+    }
+}

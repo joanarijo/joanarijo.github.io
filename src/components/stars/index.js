@@ -3,12 +3,12 @@ import './stars.css'
 
 
 const Stars = () => (
-  <div class="stars">
-  <div class="stars__wrap">
-     <div class="stars__sizes">
-        <div class="small"></div>
-        <div class="medium"></div>
-        <div class="big"></div>
+  <div className='stars'>
+  <div className='stars__wrap'>
+     <div className='stars__sizes'>
+        <div className='small'></div>
+        <div className='medium'></div>
+        <div className='big'></div>
       </div>
    </div>
 </div>

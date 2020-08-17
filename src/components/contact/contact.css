@@ -72,6 +72,24 @@
     display: none;
 }
 
+.thankyou{
+    width: 100%;
+    min-height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    background-color: var(--lessdarkgrey);
+}
+
+
+.thankyou__title{ 
+    font-family: var(--bolditalic), Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 3.5rem;
+    color: var(--white);
+}
+
 /* MOBILE */
 @media (max-width: 812px) {
     .contact{
@@ -94,6 +112,10 @@
     
     .input__wrap input:first-child{
         margin: 0 0 20px 0;
+    }
+
+    .thankyou__title{ 
+        font-size: 2.8rem;
     }
 
 }
