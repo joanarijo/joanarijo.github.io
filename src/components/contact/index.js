@@ -14,11 +14,11 @@ const Contact = () => (
                     <input name='bot' />
                 </div>
                 <div className='input__wrap'>
-                <input type="text" name="Name" placeholder="Name" required/>
+                <input type="text" name="name" placeholder="Name" required/>
                 <input type="email" name="email" placeholder="Email" required/>
                 </div>
 
-                <textarea placeholder="Enter your message here..." required></textarea>
+                <textarea placeholder="Enter your message here..." name="message" required></textarea>
                 <button type="submit">Submit</button>
             </form>
         </div>
