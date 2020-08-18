@@ -26,7 +26,9 @@ const ProjectTemplate = (props) => {
                         <div className="post__categories">
                             <h2 className="categories__title"><pre>&lt;/></pre></h2>
                             {props.data.contentfulProject.category.map(category => (
-                            <p className="categories__languages">{category.title}</p>
+                                <div key={category.id}>
+                                    <p className="categories__languages">{category.title}</p>
+                                </div>
                             ))}
                         </div>
 
@@ -45,9 +47,10 @@ const ProjectTemplate = (props) => {
                     </div>
 
                 </div>
+                <Footer />
             </div>
 
-            <Footer />
+            
         </Layout>
         
     )

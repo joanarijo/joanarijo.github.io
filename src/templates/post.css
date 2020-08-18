@@ -2,7 +2,7 @@
 .post__wrap{
     position: relative;
     padding: 7% 10% 0 10%;
-    height: 95vh;
+    height: 100vh;
     
 }
 
@@ -67,8 +67,8 @@ pre{
     }
 
     .post__wrap{
-        padding: 10% 2rem 0 2rem;
-        height: 90vh;
+        padding: 10% 2rem 20% 2rem;
+        height: 100%;
     }
 
     .post__info{

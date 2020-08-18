@@ -137,7 +137,25 @@ figure{
 /* TABLET */
  @media (min-width: 812px) and (max-width: 1366px) {
     .experiment__title {
-        font-size: 1rem;
+        font-size: 0.8rem;
         margin-top: 16px;
+    }
+
+    .experiment__subtitle {
+        font-size: 0.8rem;
+        color: var(--black);
+        -webkit-margin-before: 0;
+        margin-block-start: 0;
+        -webkit-margin-after: 0;
+        margin-block-end: 0;
+        padding-bottom: 5px;
+    }
+
+    .experiment__content--hover{
+        opacity: 0.8;
+    }
+
+    .experiment__contentwrap ul li a {
+        font-size: 0.8rem;
     }
 }
