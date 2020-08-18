@@ -24,7 +24,7 @@ const Nav = () => (
 
 <nav className='nav'>
   <Link to='/#home'><span>Home</span></Link>
-  <Link to='#projects'><span>Projects</span></Link>
+  <Link to='/#projects'><span>Projects</span></Link>
   <Link to='/#experiments'><span>Experiments</span></Link>
   <Link to='/#about'><span>About</span></Link>
   <Link to='/#contact'><span>Contact</span></Link>
