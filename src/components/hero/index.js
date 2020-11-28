@@ -3,7 +3,7 @@ import './hero.css';
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import Tilt from 'react-tilt';
 import Stars from './../stars';
-
+import arrow from '../../images/arrow.svg';
 
 const Hero = () => (
         
@@ -16,7 +16,7 @@ const Hero = () => (
                     <h1>living in Lisbon.</h1>
                 </div>
             </Tilt>
-            <button onClick={() => scrollTo('#projects')} className='arrow'></button>
+            <button onClick={() => scrollTo('#projects')} className='arrow'><img src={arrow} alt='Joana Rijo Portfolio' /></button>
             <Stars />
             
         </div> 

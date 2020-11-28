@@ -47,25 +47,19 @@
 
   }
 
+  .arrow {
+    margin-top: 3%;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    width: 80px;
+    height: 15px;
+  }
 
-.arrow {
-  margin-top: 5%;
-  background-color: transparent;
-  border: 0;
-  border-radius: 2px;
-  border-left: var(--yellow) 3px solid;
-  border-top: var(--yellow) 3px solid;
-  width: 15px;
-  height: 15px;
-  transform:matrix(2.12,-0.74,-2.12,-0.74,0,0);
-  -ms-transform:matrix(2.12,-0.74,-2.12,-0.74,0,0);
-  -webkit-transform:matrix(2.12,-0.74,-2.12,-0.74,0,0);
-  cursor: pointer;
+
+button:focus {
+  outline:0;
 }
-
-button:focus {outline:0;}
-
-
 
 
 /* MOBILE */
