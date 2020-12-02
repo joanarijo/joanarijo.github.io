@@ -86,7 +86,7 @@ export const query = graphql`
                 }
             }
             heroImage {
-                fluid(maxWidth: 1200, quality: 100) {
+                fluid(maxWidth: 1500, quality: 100) {
                     src
                     ...GatsbyContentfulFluid
                 }

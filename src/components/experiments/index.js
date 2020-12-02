@@ -20,7 +20,7 @@ export default () => (
                             demoLink
                             githubLink
                             featuredImage {
-                                fluid(maxWidth: 1200, quality: 85) {
+                                fluid(maxWidth: 965, quality: 100) {
                                     ...GatsbyContentfulFluid
                                 }
 
